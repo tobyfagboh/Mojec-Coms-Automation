@@ -1,0 +1,9 @@
+target/
+test-output/
+reports/
+.classpath      
+.settings/     
+src/test/resources/logs/Application.log
+src/test/resources/logs/Selenium.log
+log/
+
