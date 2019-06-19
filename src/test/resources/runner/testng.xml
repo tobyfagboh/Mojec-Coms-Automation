@@ -8,9 +8,9 @@
 		<listener class-name="com.w2a.listeners.CustomListeners"/>
 	</listeners>
 
- <test thread-count="1" name="FrontDest">
+ <test thread-count="1" name="LoginTest">
     <classes>
-      <class name="com.w2a.testcase.FrontDesk"/>
+      <class name="com.w2a.testcase.LoginTest"/>
     </classes>
  </test> <!-- Test -->
   
