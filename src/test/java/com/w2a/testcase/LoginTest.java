@@ -21,5 +21,19 @@ public class LoginTest extends TestBase {
 		log.debug("Log in successfully executed");
 		
 	}
+	
+	@Test
+	public void validLogin () throws InterruptedException {
+		
+		Thread.sleep(2000);
+		driver.findElement(By.id(OR.getProperty("email_ID"))).clear();
+		driver.findElement(By.id(OR.getProperty("email_ID"))).sendKeys(OR.getProperty("email_TEXT"));
+		driver.findElement(By.id(OR.getProperty("password_ID"))).clear();
+		driver.findElement(By.id(OR.getProperty("password_ID"))).sendKeys(OR.getProperty("password_TEXT"));		
+		click("loginBtn_XPATH");
+		Thread.sleep(3000);
+		log.debug("Log in successfully executed");
+		
+	}
 
 }
